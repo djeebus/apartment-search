@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100%;
+}
+
+#site-header {
+    position: absolute;;
+    left: 20em;
+    top: 3em;
+    z-index: 999;
+
+    border: solid thin white;
+    background-color: white;
+    padding: 1em;
+}
+
+#site-header h1 {
+    margin: 0;
+}
+
+.zillow-image {
+    float: left;
+}
+
+.rent-popup div {
+    width: 150px;
+}
