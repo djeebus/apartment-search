@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Apartment Search 2016</title>
-    <style type="text/css" href="css/bootstrap.css"></style>
-    <link rel="stylesheet" type="text/css" href="apartment-search.css">
+
+    {% assets "app_css" %}
+        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
 </head>
 <body>
     <div id="site-header">
         <h1>Apartment Search</h1>
     </div>
     <div id="map"></div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="apartment-search.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR9MxzKi9_hviOV47pni8cZsKLb5plJBs&callback=initMap"
             async defer></script>
+
+    {% assets "app_js" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
 </body>
 </html>
